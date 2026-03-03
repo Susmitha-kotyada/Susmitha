@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(to right,#eb1111,#f19292);
+            font-family:Arial;
+        }
+        fieldset{
+            background:#f8abab;
+            padding:20px;
+            width:660px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+        input{
+            width:100%;
+            padding:6px;
+            margin:5px 0;
+        }
+        input[type=submit]{
+            background:#c91827;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+<fieldset>
+    <marquee><h3>Registration Form</h3></marquee>
+    <form action="register.php" method="post" enctype="multipart/form-data">
+        Id:
+        <input type="text" name="id" required>
+
+        Username:
+        <input type="text" name="username" required>
+
+        Email:
+        <input type="email" name="email" required>
+
+        Password:
+        <input type="password" name="password" required>
+
+    <input type="file" name="myfile">
+    <br><br>
+    <input type="submit" value="Upload">
+    
+       <input type="submit" value="Register">
+
+    </form>
+</fieldset>
+
+</body>
+</html>
